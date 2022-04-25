@@ -5,10 +5,10 @@ This is a simple python script to backup MySQL all databases using the mysqldump
 How to Use Script
 This script is very easy to use, Download or copy this script on your local system and execute it with python. This script is capable to take multiple databases backup.
 
+Multiple Databases Backup: To take multiple databases backup.
 
-
-Multiple Databases Backup: To take multiple databases backup
 1- create an text file like /backup/dbnames.txt with bash script:
+
 
 ```
 #!/bin/bash
