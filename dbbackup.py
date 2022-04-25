@@ -12,7 +12,7 @@ DB_HOST = '1.1.1.102'
 DB_USER = 'backup'
 #Fill in the database password here
 DB_USER_PASSWORD = '**********'
-BACKUP_PATH = '/home/db_backup/'
+BACKUP_PATH = '/home/backup/'
 #DB_PORT
 DB_PORT = '6447'
 #DB_COMMAND
@@ -62,7 +62,7 @@ with open('/home/backup/dbnames.txt') as DB_LIST:
             multi = 0
 
 # Starting actual database backup process.
-with open('/home/db_backup/dbnames.txt') as DB_LIST:
+with open('/home/backup/dbnames.txt') as DB_LIST:
     M=DB_LIST.readlines()
     DB_LIST=[]
     for i in M:
@@ -89,5 +89,4 @@ with open('/home/db_backup/dbnames.txt') as DB_LIST:
             os.system(dumpcmd)
 
         print ("Backup script completed")
-        print ("Your backups has been created in '" + TODAYBACKUPPATH + "' directory")
-                                                                                       
+        print ("Your backups has been created in '" + TODAYBACKUPPATH + "' directory")                                                                      
